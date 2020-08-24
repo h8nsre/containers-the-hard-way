@@ -1,3 +1,4 @@
+#
 # Containers the hard way: Gocker: A mini Docker written in Go
 It is a set of Linux's operating system primitives that provide the illusion of a container. A process or a set of processes can shed their environment or namespaces and live in new namespaces of their own, separate from the host's `default` namespace. Container management systems like Docker make it incredibly easy to manage containers on your machine. But how are these containers constructed? It is just a sequence of Linux system calls (involving namespaces and cgroups, mainly), at the very basic level while also leveraging other existing Linux technologies for container file system, networking, etc.
 
